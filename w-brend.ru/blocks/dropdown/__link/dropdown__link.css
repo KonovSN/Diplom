@@ -1,0 +1,9 @@
+.dropdown__link{
+  background-color: #84ceeb;
+  border: 3px solid #5AB9EF;
+  border-radius: 15px;
+  color: black;
+  padding: 6px 16px;
+  text-decoration: none;
+  display: block;
+}

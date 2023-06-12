@@ -1,0 +1,26 @@
+.header__btn{
+    background-color: #8860D0;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s linear;
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+
+
+.header__btn:hover {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+@media screen and (max-width: 450px) {
+    .header__btn{
+        margin-bottom: 7px;
+    }
+}

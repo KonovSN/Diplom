@@ -1,0 +1,12 @@
+.body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+html {
+    height: 100%;
+}
+

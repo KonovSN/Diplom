@@ -1,0 +1,21 @@
+.header__logo{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 120px;
+}
+
+
+@media screen and (max-width: 1550px){
+    .header__logo{
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__logo{
+        
+    }
+}

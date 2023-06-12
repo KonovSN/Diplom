@@ -1,0 +1,11 @@
+.header__phone-num {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s linear;
+    margin-left: 10px;
+}
+
+.header__phone-num:hover {
+    color: #d81d1d;
+}

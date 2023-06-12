@@ -1,0 +1,28 @@
+.map {
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 450px){
+  .map p{
+    width: 350px;
+    margin: 0 auto;
+  }
+  .map_yandex{
+    width: 360px;
+    height: auto;
+  }
+  .container{
+    width: 300px;
+    text-align: center;
+  }
+  
+  h1{
+    font-size: 1.5em !important; 
+  }
+}
+
+
+

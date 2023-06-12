@@ -1,0 +1,13 @@
+.dropdown__content {
+  display: none;
+  position: absolute;
+  left: 15px;
+  z-index: 1;
+  opacity: 0;
+}
+  
+@media screen and (max-width: 450px) {
+  .dropdown__content{
+    left: -58px
+  }
+}

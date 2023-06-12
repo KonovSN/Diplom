@@ -1,0 +1,18 @@
+.tovar{
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+@media screen and (max-width: 1550px){
+    .tovar{
+        max-width: 1330px;
+    }
+}
+
+@media screen and (max-width: 1360px){
+    .tovar{
+        max-width: 1054px;
+    }
+}

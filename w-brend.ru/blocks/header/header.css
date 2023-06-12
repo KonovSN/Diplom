@@ -1,0 +1,15 @@
+.header {
+    margin-bottom: 30px;
+    background-color: #84ceeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 120px;
+}
+
+@media screen and (max-width: 450px) {
+    .header{
+        flex-direction: column;
+        max-width: 450px;
+    }
+}

@@ -1,0 +1,5 @@
+.card__sizes-wrappper{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}

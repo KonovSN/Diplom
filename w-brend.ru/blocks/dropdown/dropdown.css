@@ -1,0 +1,15 @@
+.dropdown{
+    position: relative;
+    top: 38px;
+    left: -10px;
+    width: 210px;
+}
+
+@media screen and (max-width: 450px) {
+    .dropdown{
+        top: 0;
+        left: 104px;
+        margin-bottom: 70px;
+        width: 210px;
+    }
+}

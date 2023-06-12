@@ -1,0 +1,12 @@
+.header__nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 25px;
+    transition: color 0.3s linear;
+}
+
+.header__nav-item:hover {
+    color: #d81d1d
+}

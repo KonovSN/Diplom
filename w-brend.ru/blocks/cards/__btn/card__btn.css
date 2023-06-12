@@ -1,0 +1,14 @@
+.card__btn{
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color:#5AB9EF;
+    cursor: pointer;
+}
+
+.card__btn:hover {
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+}
+

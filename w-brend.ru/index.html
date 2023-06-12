@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <title>W-BREND</title>
+        
+    </head>
+
+<!--Библиотека jQuery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!--Готовый скрипт корзины-->
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-ee60c669.js"></script>
+
+<!--Стили элементов для корзины-->
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-ee60c669.css" rel="stylesheet">
+
+    <body class="body">
+        <header class='header'>
+            <!-- <div class="header__line"> -->
+                <div class="header__logo">
+                    <img class="header__logo-img" src="./images/iconizer-free-icon-letter-w-6422908.svg" alt="">
+                    <p class="header__logo-text"> - Brend</p>
+                </div>
+                <nav class="header__nav">
+                    <a class="activ" href="index.html">Главная</a>
+                    <a class="header__nav-item" href="payment.html">Оплата и доставка</a>
+                    <a class="header__nav-item" href="company.html">О компании</a>
+                    <a class="header__nav-item" href="contacts.html">Контакты</a>
+                </nav>
+                <div id="pos" class="pos"></div> 
+
+                <div class="header__phone">
+                    <div class="header__phone-holder">
+                        <div class="header__phone-img">
+                            <img src="./images/phone.png" alt="Телефон">
+                        </div>
+                        <div class="header__phone-number">
+                          <a class="header__phone-num" href="#">+7(951)894-64-62</a>
+                        </div>
+                    </div>
+                    <div class="header__phone-text">
+                        Обработка заказов каждый день <br>с 10:00 до 21:00
+                    </div>
+                </div>
+                <button class="header__btn">
+                    ВАШ ЗАКАЗ
+                    <img class="header__cart-img" src="./images/iconizer-emptyshoppingcart_shopingcart_carritodelacompravacio_4565.svg" id="easynetshop-cart" alt="Корзина">
+                    <p class="header__kol-tovar">0</p>
+                </button>
+            <!-- </div> -->
+        </header>
+        <main class="main">
+            <section class="tovar">
+                <div class="dropdown">
+                    <button class="dropdown__dropbtn">Выберите категорию</button>
+                    <div class="dropdown__content">
+                      <a class="dropdown__link" href="#sec1">Мужская одежда</a>
+                      <a class="dropdown__link" href="#sec2">Женская одежда</a>
+                      <a class="dropdown__link" href="#sec3">Детская одежда</a>
+                    </div>
+                  </div>
+                  <div class="bax">
+                    <h1 id="sec1">Мужская одежда</h1>
+                  </div>
+                <div class="cards">
+                    <div class="cards__card">
+                        <img src="./images/3225340640_62_1.jpg" alt="" class="card__img">
+                        <p class="card__name card__text">Спортивный костюм</p>
+                        <p class="card__price card__text">5990 рублей</p>
+                        <button class="btn-ens-action card__buy card__btn" data-rel="ee60c669313177">В корзину</button>
+                        <button class="card__descr card__btn" onclick="document.location='#popup1'">Подробнее</button>
+                    </div>
+                    <div class="cards__card">
+                        <img src="./images/5012afaf73a1655db80d554c106bc03e.jpg" alt="" class="card__img">
+                        <p class="card__name card__text">Повседневный костюм</p>
+                        <p class="card__price card__text">7990 рублей</p>
+                        <button class="btn-ens-action card__buy card__btn" data-rel="ee60c669313388">В корзину</button>
+                        <button class="card__descr card__btn" onclick="document.location='#popup2'">Подробнее</button>
+                    </div>
+                    <div class="cards__card">
+                        <img src="./images/afdb2b67af42961f85dfb7068b14f49f.jpeg" alt="" class="card__img">
+                        <p class="card__name card__text">Деловой костюм</p>
+                        <p class="card__price card__text">14990 рублей</p>
+                        <button class="btn-ens-action card__buy card__btn" data-rel="ee60c669313442">В корзину</button>
+                        <button class="card__descr card__btn"onclick="document.location='#popup3'">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="bax">
+                      <h1 id="sec2">Женская одежда</h1>
+                    </div>
+                    <div class="cards">
+                    <div class="cards__card">
+                        <img src="./images/Stil_dlya_polnykh_zhenshchin_40_1.jpg" alt="" class="card__img">
+                        <p class="card__name card__text">Деловой костюм</p>
+                        <p class="card__price card__text">9990 рублей</p>
+                        <button class="btn-ens-action  card__buy card__btn" data-rel="ee60c669313443">В корзину</button>
+                        <button class="card__descr card__btn" onclick="document.location='#popup4'">Подробнее</button>
+                    </div>
+                    <div class="cards__card">
+                        <img src="./images/IMG_2164_Facetune_02-06-2022-21-34-27-scaled.jpg" alt="" class="card__img">
+                        <p class="card__name card__text">Спортивный костюм</p>
+                        <p class="card__price card__text">15990 рублей</p>
+                        <button class="btn-ens-action card__buy card__btn" data-rel="ee60c669313444">В корзину</button>
+                        <button class="card__descr card__btn" onclick="document.location='#popup5'">Подробнее</button>
+                    </div>
+                    <div class="cards__card">
+                        <img src="./images/e5ec555a88536d532c7c0a6d6eed1626.jpg" alt="" class="card__img">
+                        <p class="card__name card__text">Повседневный костюм</p>
+                        <p class="card__price card__text">19990 рублей</p>
+                        <button class="btn-ens-action card__buy card__btn" data-rel="ee60c669313442">В корзину</button>
+                        <button class="card__descr card__btn"onclick="document.location='#popup6'">Подробнее</button>
+                </div>
+                    </div>
+                <div class="bax">
+                  <h1 id="sec3">Детская одежда</h1>
+                </div>
+                <div class="cards">
+                <div class="cards__card">
+                    <img src="https://img.joomcdn.net/2219329036838e8d5c9c502343e9fd82ca357f81_original.jpeg" alt="" class="card__img">
+                    <p class="card__name card__text">Спортивный костюм </p>
+                    <p class="card__price card__text">9990 рублей</p>
+                    <button class="btn-ens-action card__buy card__btn" data-rel="ee60c669313446">В корзину</button>
+                    <button class="card__descr card__btn"onclick="document.location='#popup7'">Подробнее</button>
+                </div>
+                <div class="cards__card">
+                    <img src="https://static.insales-cdn.com/r/x3VczjtuGwc/rs:fit:500:0:1/q:100/plain/images/products/1/5734/620590694/%D1%80%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9__2_.jpg" alt="" class="card__img">
+                    <p class="card__name card__text">Спортивный костюм</p>
+                    <p class="card__price card__text">5990 рублей</p>
+                    <button class="btn-ens-action card__buy card__btn" data-rel="ee60c669313447">В корзину</button>
+                    <button class="card__descr card__btn" onclick="document.location='#popup8'">Подробнее</button>
+                </div>
+                <div class="cards__card">
+                    <img src="https://ae04.alicdn.com/kf/HTB1MrzxRFXXXXbcXFXXq6xXFXXXl.jpg" alt="" class="card__img">
+                    <p class="card__name card__text">Летняя одежда</p>
+                    <p class="card__price card__text">9990 рублей</p>
+                    <button class="btn-ens-action card__buy card__btn" data-rel="ee60c669313448">В корзину</button>
+                    <button class="card__descr card__btn" onclick="document.location='#popup9'">Подробнее</button>
+            </div>
+            </section>
+        </main>
+
+        <footer class="py-3">
+         <div class="copy-bottom-txt text-center py-3">
+            <p> 
+               © 2023 Конов Сергей группа 3901 
+            </p>
+         </div>
+         <div class="social-icons mt-lg-3 mt-2 text-center">
+            <ul>
+              <li><a href="https://wa.me/+79518946462"><span class="fa fa-whatsapp"></span></a></li>
+              <li><a href="https://t.me/NK_Sergey_Konov"><span class="fa fa-telegram"></span></a></li>
+              <li><a href="https://vk.com/solost1ff"><span class="fa fa-vk"></span></a></li>
+            </ul>
+         </div>
+    </footer>
+    <!-- CDN подключение иконок fontawesome -->
+    <script src="https://use.fontawesome.com/df966d76e1.js"></script> 
+        <footer class="footer"></footer>
+        <script type="module" src="./index.js"></script>
+        <div id="popup1" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#pos" class="popup__close"> X </a>
+                    <div class="popup__title"> Спортивный костюм </div>
+                    <div class="popup__text"> Спортивный костюм изготавливается из легких и прочных материалов, которые обеспечивают вентиляцию и отводят лишнюю влагу от тела. Для этого часто используются технологии, основанные на принципе "дышащих" материалов, которые обеспечивают комфортное ношение даже при интенсивных нагрузках. </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup2" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#pos" class="popup__close"> X </a>
+                    <div class="popup__title"> Повседневный костюм </div>
+                    <div class="popup__text"> Повседневный костюм  сочетает в себе элегантность и комфорт, подходящий для различных ситуаций, от деловых встреч до неформальных вечерних мероприятий. Он выражает стиль и самодостаточность носителя, демонстрируя его уверенность и вкус в моде. </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup3" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#pos" class="popup__close"> X </a>
+                    <div class="popup__title"> Деловой костюм </div>
+                    <div class="popup__text"> Деловой костюм идеально подходит для формальных ситуаций, таких как деловые встречи, презентации или конференции. Он выражает статус и решительность носителя, создавая впечатление уверенности и профессионализма. Комбинируя солидные брюки с белой рубашкой, вы создаете безупречный и стильный образ, который будет подходить в любой деловой среде. </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup4" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#pos" class="popup__close"> X </a>
+                    <div class="popup__title"> Деловой костюм </div>
+                    <div class="popup__text"> Этот костюм идеально подходит для творческих и менее формальных рабочих сред. Он выражает индивидуальность и стиль носителя, предоставляя при этом удобство и гибкость в движении. Этот образ сочетает деловую элегантность с непринужденным и модным подходом к одежде, что создает уверенность и профессионализм в любой рабочей обстановке. </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup5" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#pos" class="popup__close"> X </a>
+                    <div class="popup__title"> Спортивный костюм </div>
+                    <div class="popup__text"> Спортивный костюм изготавливается из легких и прочных материалов, которые обеспечивают вентиляцию и отводят лишнюю влагу от тела. Для этого часто используются технологии, основанные на принципе "дышащих" материалов, которые обеспечивают комфортное ношение даже при интенсивных нагрузках. </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup6" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#pos" class="popup__close"> X </a>
+                    <div class="popup__title"> Повседневный костюм </div>
+                    <div class="popup__text"> Данный костюм подходит для различных повседневных активностей, от прогулок в городе до отдыха на природе. Он выражает стиль и комфорт носителя, обеспечивая практичность и защиту. Этот наряд сочетает в себе функциональность и модный вид, создавая уверенность и свободу в повседневном стиле. </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup7" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#pos" class="popup__close"> X </a>
+                    <div class="popup__title"> Спортивный костюм </div>
+                    <div class="popup__text"> Данный костюм идеально подходит для мальчика, а также для активного образа жизни и спортивных мероприятий. Он обеспечивает комфорт и свободу движений, а также выражает энергию и стиль молодого спортсмена. Этот наряд позволяет ребенку чувствовать себя уверенно и комфортно, наслаждаясь активностью и игрой. </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup8" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#pos" class="popup__close"> X </a>
+                    <div class="popup__title"> Повседневный костюм </div>
+                    <div class="popup__text"> Данный костюм идеально подходит для активного образа жизни, спортивных мероприятий или тренировок. Он обеспечивает комфорт, свободу движений и выражает энергию и стиль маленькой спортсменки. Этот наряд позволяет девочке чувствовать себя уверенно, комфортно и модно, наслаждаясь активностью и спортом. </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup9" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#pos" class="popup__close"> X </a>
+                    <div class="popup__title"> Летняя одежда </div>
+                    <div class="popup__text"> Данный наряд идеально подходит для летних прогулок, игр на пляже, спортивных занятий или просто для комфортного времяпрепровождения. Он обеспечивает свежесть, удобство и легкость движений, что позволяет мальчику наслаждаться активностью и веселыми моментами летнего сезона. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
